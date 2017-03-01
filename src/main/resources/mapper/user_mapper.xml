@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nmnet.mapper.IUserMapper">
+
+    <insert id="addUser">
+        INSERT INTO user_info value(NULL, #{name}, #{pwd}, #{alia}, #{address}, #{age});
+    </insert>
+
+    <delete id="deleteUserByName">
+        DELETE FROM user_info WHERE name=#{name}
+    </delete>
+
+    <update id="updateUser">
+        UPDATE user_info SET pwd=#{pwd},alia=#{alia},address=#{address},age=#{age} WHERE name=#{name}
+    </update>
+
+    <select id="queryAllUsers" resultType="User">
+        SELECT * FROM user_info;
+    </select>
+
+    <select id="queryUserByName" resultType="User">
+      SELECT * FROM user_info WHERE name = #{name}
+    </select>
+
+</mapper>

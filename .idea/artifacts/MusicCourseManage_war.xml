@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MusicCourseManage:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="waychen.war">
+      <element id="artifact" artifact-name="MusicCourseManage:war exploded" />
+    </root>
+  </artifact>
+</component>
