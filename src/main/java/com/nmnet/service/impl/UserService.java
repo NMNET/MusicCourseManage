@@ -22,7 +22,7 @@ public class UserService implements IUserService {
     public NetResponse regist(User user) {
         try {
             iUserMapper.addUser(user);
-            netResponse.setObject("注册成功");
+            netResponse.setObject("regist success");
         } catch (Exception e) {
             netResponse.setFailObject("注册失败", e.getMessage());
         }

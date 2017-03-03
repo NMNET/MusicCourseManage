@@ -38,9 +38,9 @@ public class NetResponse {
         return object;
     }
 
-    public void setObject(String msg) {
-        setObject(msg, null);
-    }
+//    public void setObject(String msg) {
+//        setObject(msg, null);
+//    }
 
     public void setObject(Object object) {
         setObject("成功", object);
